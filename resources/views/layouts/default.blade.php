@@ -10,7 +10,11 @@
 
 
 <div class="container">
-    @yield('content')
+    <div class="col-md-offset-1 col-md-10">
+        @include('shared.messages')
+        @yield('content')
+        @include('layouts._footer')
+    </div>
 </div>
 </body>
 </html>
